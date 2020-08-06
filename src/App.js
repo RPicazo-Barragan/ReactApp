@@ -1,30 +1,17 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 //components
-import Greet from "./components/FunctionGreet";
-import ClassGreet from "./components/ClassGreet";
+// import Greet from "./components/FunctionGreet";
+// import ClassGreet from "./components/ClassGreet";
 import PrintPost from "./components/Post";
+import Clock from "./components/Clock";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Greet firstName="Ricardo" lastName="Picazo" />
-        <ClassGreet lastName="Picazo" />
+        <Clock />
       </header>
       <div class="container p-4 ">
         <PrintPost
